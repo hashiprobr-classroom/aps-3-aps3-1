@@ -46,6 +46,10 @@ public class Central {
             }
         }
 
-        return count > 0 ? (double) soma / count : 0.0;
+        if (count > 0) {
+            return (double) soma / count;
+        } else {
+            return 0.0;
+        }
     }
 }
